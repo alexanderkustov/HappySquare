@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import <CoreLocation/CoreLocation.h>
+
+
+@interface ViewController : UIViewController <CLLocationManagerDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *LabelHappy;
+
+@property (weak, nonatomic) IBOutlet UILabel *Lat;
+@property (weak, nonatomic) IBOutlet UILabel *Longi;
+@property (weak, nonatomic) IBOutlet UILabel *morada;
+
+
+- (IBAction)HappyButton:(id)sender;
+
+
 
 @end
